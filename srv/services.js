@@ -19,7 +19,7 @@ module.exports = srv => {
             console.log("success");
             const { ID, urgency_code } = req.data;
            await UPDATE('Incidents').set({'Priority': 'High'}).where`ID = ${req.data.ID}`;
-            console.log("success");
+        //     console.log("success");
             // ... your logic
         });
 
